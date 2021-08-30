@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 
-const ScriptSetup = require('unplugin-vue2-script-setup/webpack')
-const Icons = require('unplugin-icons/webpack')
-const IconsResolver = require('unplugin-icons/resolver')
+// const ScriptSetup = require('unplugin-vue2-script-setup/webpack')
+// const Icons = require('unplugin-icons/webpack')
+// const IconsResolver = require('unplugin-icons/resolver')
 const Components = require('unplugin-vue-components/webpack')
 
 /**
@@ -11,19 +11,19 @@ const Components = require('unplugin-vue-components/webpack')
 module.exports = {
   configureWebpack: {
     plugins: [
-      ScriptSetup({
-        refTransform: true,
-      }),
-      Icons({
-        compiler: 'vue2',
-      }),
+      // ScriptSetup({
+      //   refTransform: true,
+      // }),
+      // Icons({
+      //   compiler: 'vue2',
+      // }),
       Components({
-        resolvers: [
-          // https://github.com/antfu/unplugin-icons
-          IconsResolver({
-            componentPrefix: '',
-          }),
-        ],
+        // resolvers: [
+        //   // https://github.com/antfu/unplugin-icons
+        //   IconsResolver({
+        //     componentPrefix: '',
+        //   }),
+        // ],
         transformer: 'vue2',
       }),
     ],
